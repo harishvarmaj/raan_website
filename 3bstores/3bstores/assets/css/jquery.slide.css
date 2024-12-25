@@ -1,0 +1,82 @@
+.bannerSlider {
+  position: relative;
+  width: 100%;
+  height: 320px;
+  background: #ccc;
+}
+
+.bannerSlider ul li {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  list-style: none;
+}
+
+.bannerSlider .dots {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 20px;
+  width: 100%;
+  z-index: 3;
+  text-align: center;
+}
+
+.bannerSlider .dots li {
+  display: inline-block;
+  margin: 0 10px;
+	width: 10px;
+	height: 10px;
+	border: 2px solid #fff;
+	border-radius: 50%;
+  opacity: 0.4;
+	cursor: pointer;
+	transition: background .5s, opacity .5s;
+  list-style: none;
+}
+
+.bannerSlider .dots li.active {
+  background: #fff;
+	opacity: 1;
+}
+
+.bannerSlider .arrow {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: background .5s, opacity .5s;
+}
+
+.bannerSlider .arrow .arrow-left,
+.bannerSlider .arrow .arrow-right {
+  position: absolute;
+  top: 50%;
+  margin-top: -25px;
+  display: block;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  opacity: 0.5;
+	transition: background .5s, opacity .5s;
+}
+
+.bannerSlider .arrow  .arrow-left:hover,
+.bannerSlider .arrow  .arrow-right:hover {
+  opacity: 1;
+}
+
+.bannerSlider .arrow .arrow-left {
+  left: 20px;
+  background: url("../img/arrow-left.png");
+}
+
+.bannerSlider .arrow .arrow-right {
+  right: 20px;
+  background: url("../img/arrow-right.png");
+}
